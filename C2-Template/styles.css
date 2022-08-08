@@ -1,0 +1,90 @@
+* {
+    margin: 0px;
+    padding: 0px;
+  }
+  body {
+    background-color: rgb(244, 244, 244);
+  }
+  .headings{
+    text-align: center;
+  }
+  .services{
+    display: flex;
+    grid-template-columns: repeat(4,1fr);
+    flex-wrap: wrap;
+    border: 0px solid red;
+    width:95%;
+    height:300px;
+    justify-content: space-evenly;
+    gap: 50px;
+    margin: auto;
+
+  }
+  .services>img{
+    flex-wrap: wrap;
+    border: 0px solid red;
+    width:50%;
+    justify-content: space-evenly;
+    gap: 50px;
+
+  }
+  .services>img{
+    height:60px;
+    width:50%;
+    
+  }
+  .discover{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  }
+  .discover>div{
+    text-align: center;
+    margin:auto;
+  }
+   
+  .doctors{
+    display:flex;
+    flex-direction: row;
+    grid-template-columns: repeat(4,1fr);
+    height: 300px;
+    width: 95%;
+    border: 0px solid red;
+    margin: auto;
+  }
+  .doctors>p{
+    text-align: left;
+  }
+  button{
+    width: 90px;
+    color :white;
+    background-color: blue;
+    border-radius: 5px;
+  }
+  .doctors>img{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    align-items: flex-start;
+    flex-direction: row;
+  }
+  
+  /* Medium screens */
+  @media all and (min-width: 651px) and (max-width: 900px) {
+
+  }
+  /* Small screens */
+  @media all and (min-width: 250px) and (max-width: 650px) {
+    .discover{
+      display: grid;
+      grid-template-columns: repeat(1,1fr);
+    }
+    .discover>div{
+      text-align: center;
+      margin:auto;
+    }
+    .services{
+      grid-template-columns: repeat(1,1fr);
+      justify-content: space-evenly;
+      gap: 50px;
+      margin: auto;
+  }
+}
